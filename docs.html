@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Change the description wrt project -->
+    <meta
+      name="description"
+      content="SWAY - Size Guide migration file."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- You can add your own fonts from fonts.google.com -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Default Script tags -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./public/js/index.js"></script>
+
+    <!-- Replace the title name -->
+    <title>SWAY - Size Guide</title>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif">
+    <!-- Header start here -->
+    <header class="w-full p-3 border flex">
+      <nav
+        class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start"
+      >
+        <ul>
+          <!-- You can change your logo name -->
+          <li class="font-mono text-xl">Size Guide by SWAY : Docs</li>
+        </ul>
+
+      </nav>
+
+      <div class="sm:hidden flex" onclick="OnclickOpenMenu()" id="open-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="hidden" onclick="OnclickCloseMenu()" id="close-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </header>
+    <!-- Header ends here -->
+
+    <div class="flex flex-col md:flex-row lg:flex-row">
+      <!-- Side menu starts here -->
+      <nav
+        class="flex ml-10 mt-7 md:fixed lg:fixed"
+        data-spy="affix"
+        data-offset-top="300"
+        data-offset-bottom="200"
+        role="navigation"
+      >
+        <ul class="nav">
+         
+          <li class="font-medium"><a href="#link1">Getting Started</a></li>
+           <li class="font-medium"><a href="#installation">Installation</a></li>
+          <li class="font-medium"><a href="#link3">Configuration</a></li>
+          <li class="font-medium"><a href="#requirements">Requirements for it to work</a></li>
+          <li class="font-medium"><a href="#requirements">Steps</a></li>
+          <ul class="nav">
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#step1">Step 1</a> 
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#step2">Step 2</a>
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#step3">Step 3</a>
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#step4">Step 4</a>
+              </li>
+              <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
+                <a href="#step5">Step 5</a>
+              </li>
+            </ul>
+
+             </ul>
+          </li>
+    
+        </ul>
+      </nav>
+      <!-- Side Menu ends here -->
+
+      <div class="pl-5 md:pl-[250px] lg:pl-[250px]">
+        <!-- Link1 start -->
+        <section id="link1">
+          <div class="h-full mt-10">
+             <p class="font-normal text-2xl" style="padding-bottom:20px; "><img src="./doc/logo.png" style="margin-left:calc(100%/3)"></p>
+            <p class="font-normal text-2xl" style="padding-bottom:20px;">Getting Started</p>
+            <p class="leading-0 w-3/4">
+              Size Guide for SWAY is a Shopify App utilizing only the <a href="https://shopify.dev/apps/online-store/theme-app-extensions" target="_blank" style="color:blue">Theme App Extension</a> feature for the size guide to be transferrable. 
+              </p>
+              <p class="leading-0 w-3/4">
+              Theme app extension only allows 100kb so uploading files and adding some code are necessary.
+              </p>
+              <p class="leading-0 w-3/4 font-normal text-2xl" id="installation">
+              Installation
+               </p>
+              <ul>
+                <li>1. From <a class='link' href="https://www.shopify.com/partners" target="_blank">Shopify Partners account</a>, under Apps menu open 'Size Guide by SWAY' app. </li>
+                <li>2. Under Merchant install link,  share the link provided to install app. This requires the app to be live. Being live requires a server.</li>
+                <li>3. Before install, please follow shopify documentation to make the app live <a href="https://shopify.dev/apps/tools/cli/getting-started" target="_blank" style="color:blue"> here </a> to successfully run <code>shopify app serve</code> command.</li>
+                <li>4. Paste installation link and install the app. It is good to go.</li>
+              </ul>
+               <p class="leading-0 w-3/4 font-normal text-2xl" id="requirements">
+              Requirements for it to work: Steps
+               </p>
+              <ul>
+                <li>1. Uploading all Assets file <a href="https://drive.google.com/file/d/13osWdpf2MhF4ZDoLAihwGSSJvptZXo88/view?usp=sharing" target="_blank" class="link">here</a> into assets folder of shopify</li>
+                <li>2. Adding custom code into the theme.liquid file</li>
+                <li>3. Adding the 'Size Guide by SWAY' block into the theme using the customizer</li>
+                <li>4. Add shirt into the list</li>
+                <li>5. Further changes on code depending on theme </li>
+              </ul>
+          </div>
+        </section>
+        <!-- Link1 end -->
+  
+    <style>
+     img {
+       box-shadow: 0 1px 2px #fff, /*bottom external highlight*/
+  0 -1px 1px #666, /*top external shadow*/
+  inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+  inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+     } 
+     p {
+       padding-top:10px;
+       padding-bottom:10px;
+     }
+    .comp-1 {
+      font-weight:600;
+    }
+    .low-pad {
+      padding-bottom:5px;
+      padding-top:5px;
+    }
+    .flex-col {
+    flex-direction: column!important;
+    }
+    .bold {
+      font-weight:bold
+    }
+    .indent50 {
+      text-indent:50px;
+    }
+    .indent25 {
+      text-indent:25px;
+    }
+    .link {
+      color:blue
+    }
+    </style>
+
+        <!-- Link3 start -->
+        <section id="link3">
+        <div class="h-full mt-5">
+
+            <p class="font-normal text-2xl">Steps</p>
+             <!-- Step 1 -->
+            <p class="leading-0 w-3/4 bold indent25" id="step1">
+              Step 1: Upload all files from Assets folder here into assets folder in shopify
+            </p>
+              <p class="leading-0 w-3/4 indent50"> 
+              1. Download Assets file from <a href="https://drive.google.com/file/d/13osWdpf2MhF4ZDoLAihwGSSJvptZXo88/view?usp=sharing" target="_blank" class="link">here</a>
+              </p>
+              <p class="leading-0 w-3/4 indent50">
+              2. Go to online store.
+             </p>
+              <p class="leading-0 w-3/4 indent50">
+              3. Open Assets folder. Click on "Add a new asset" Add all files.
+              </p>
+
+              <!-- Step 2 -->
+            <p class="leading-0 w-3/4 bold indent25" id="step2">
+              Step 2: Adding custom code for Swiper.js, Swiper.css, Jquery etc into theme.liquid
+            </p>
+              <p class="leading-0 w-3/4 indent50"> 
+              1. Add this code snippet below before the closing <code>head</code> or <code>header</code> tag. 
+      
+                <script class="indent50" src="https://gist.github.com/jerkin61/dbca3b2dab1324b677c27d744da47a3e.js"></script>
+           
+              </p>
+              <p class="leading-0 w-3/4 indent50">
+              2. Add this code snippet below before the closing <code>body</code> tag. 
+<script src="https://gist.github.com/jerkin61/92c807cfaf24c1afe6e891c9b8e50d78.js"></script>
+             </p>
+              <p class="leading-0 w-3/4 indent50">
+              3. You may need to change {{% if %}} statement in step 1 depending on the theme's product page template name. 
+              </p>
+
+               <!-- Step 3 -->
+            <p class="leading-0 w-3/4 indent25 bold" id="step3">
+              Step 3: Adding the 'Size Guide by SWAY' block into the theme using the customizer
+            </p>
+              <p class="leading-0 w-3/4 indent50"> 
+              1. Go to online store. Under the theme you want to add 'Size Guide', click on 'Customize' option. 
+              </p>
+              <p class="leading-0 w-3/4 indent50">
+              2. On the right side part of the screen, look for click on 'Add Section' option and under Apps click on 'Product Pages embedded through Size Guide by SWAY'.  
+             </p>
+              <p class="leading-0 w-3/4 indent50">
+              3. Hide default product page of theme and drag 'Product Page' block next to 'Header' block or 'Breadcrumbs' block and Click 'Save' on the top.
+              </p>
+           <!-- Step 4 -->
+            <p class="leading-0 w-3/4 indent25 bold" id="step4">
+              Step 4: Add shirt into the list
+            </p>
+              <p class="leading-0 w-3/4 indent50"> 
+              1. Inside App section, click on 'Product Pages' and it will open customization settings.
+              </p>
+              <p class="leading-0 w-3/4 indent50">
+              2. Under "Add Products here for Size Guide", edit and add product name you want the size guide to be added. Spacing and capitalization should be followed when adding product name and each product name needs to be enclosed with apostrophe and are separated with comma. 
+             </p>
+              <p class="leading-0 w-3/4 indent50">
+              3. Hit 'Save'.
+              </p>
+
+             <!-- Step 5 -->
+            <p class="leading-0 w-3/4 indent25 bold" id="step5">
+              Step 5: Further changes on code depending on theme.
+            </p>
+              <p class="leading-0 w-3/4 indent50"> 
+              1. If font might be different. Please check if theme style is overriding what is set on affected texts.
+              </p>
+              <p class="leading-0 w-3/4 indent50">
+              2. Letter spacing, text decoration, overflow's might need some override.
+             </p>
+              <p class="leading-0 w-3/4 indent50">
+              3. Parent html's height needs to be 100%.
+              </p>
+              
+
+              
+              
+
+
+ 
+
+      
+      </div>
+    </div>
+    <!-- Footer starts here -->
+    <footer>
+      <div class="bg-black h-38 py-1 px-1 mt-5">
+        <div
+          tabindex="0"
+          aria-label="footer"
+          class="focus:outline-none mx-auto container flex flex-col items-center justify-center"
+        >
+          <div class="text-black flex flex-col md:items-center f-f-l pt-0">
+            <div class="my-6 text-base text-color f-f-l">
+              <ul class="md:flex items-center">
+                <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
+                  <a
+                    href="./index.html"
+                    class="text-white focus:outline-none focus:underline hover:text-gray-200"
+                    >Home
+                  </a>
+                </li>
+                <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
+                  <a
+                    href="./docs.html"
+                    class="text-white focus:outline-none focus:underline hover:text-gray-200"
+                    >Documentation
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-sm text-color mb-10 f-f-l">
+      
+              <p tabindex="0" class="text-white focus:outline-none">
+                &copy; 2022 SWAY. All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
+  </body>
+</html>
