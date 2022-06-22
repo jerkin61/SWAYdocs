@@ -104,15 +104,6 @@
               <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
                 <a href="#step5">Step 5</a>
               </li>
-               <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
-                <a href="#step6">Step 6</a>
-              </li>
-               <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
-                <a href="#step7">Step 7</a>
-              </li>
-               <li class="text-[#111] pl-[20px] font-[400] border-l-[2px]">
-                <a href="#step8">Step 8</a>
-              </li>
             </ul>
 
              </ul>
@@ -149,26 +140,15 @@
               <ul>
                 <li>1. Uploading all Assets file <a href="https://drive.google.com/file/d/13osWdpf2MhF4ZDoLAihwGSSJvptZXo88/view?usp=sharing" target="_blank" class="link">here</a> into assets folder of shopify</li>
                 <li>2. Adding custom code into the theme.liquid file</li>
-                <li>3. Add custom section and add theme blocks</li>
-                <li>4. Edit the "product.json" file of your theme.</li>
-                <li>5. Adding the 'Size Guide by SWAY' block into the theme using the customizer</li>
-                <li>6. Add shirt into the list</li>
-                <li>7. Change selectors for new theme</li>
-                <li>8. Further changes on code depending on theme.  </li>
-               
+                <li>3. Adding the 'Size Guide by SWAY' block into the theme using the customizer</li>
+                <li>4. Add shirt into the list</li>
+                <li>5. Further changes on code depending on theme </li>
               </ul>
           </div>
         </section>
         <!-- Link1 end -->
   
     <style>
-      .gistcontainer {
-  max-height: 300px;
-  overflow: auto;
-}
-
-.gistcontainer:target .show {display:none;}
-.gistcontainer:target {max-height:none;}
      img {
        box-shadow: 0 1px 2px #fff, /*bottom external highlight*/
   0 -1px 1px #666, /*top external shadow*/
@@ -240,81 +220,36 @@
               3. You may need to change {{% if %}} statement in step 1 depending on the theme's product page template name. 
               </p>
 
-               <!-- Step 3  draft--> 
+               <!-- Step 3 -->
             <p class="leading-0 w-3/4 indent25 bold" id="step3">
-              Step 3:  Add custom section and add theme blocks
-            </p>
-              <p class="leading-0 w-3/4 indent50"> 
-              1. Add new section and name it anything you want. Please check shopify docs for adding section.
-              </p>
-              <p class="leading-0 w-3/4 indent50">
-              2. Paste code below for the new section you created. This will add two columns namely product page thumbnail and featured image. The third column would be for the product blocks wherein you can add theme blocks and the "Size Guide by SWAY " blocks.   
-             </p>
-             <div class="gistcontainer" id="gist1">
-               <a href="#gist1" class="show" style="color:blue">Click here to show all codes</a>
-                      <script src="https://gist.github.com/jerkin61/eccd2bd217620101b3c7f57fb23ce99e.js"></script>
-              </div>
-              <p class="leading-0 w-3/4 indent50">
-              3. Search for 'Add Theme blocks here" on the code you pasted and add theme blocks code for your new theme below it. This will ensure that you can add theme blocks. If you don't know the  "product page content blocks" code of your new theme, please refer to your new theme documentation or contact support. 
-              </p>
-              4. Search for 'Add schema tag of theme blocks here " on the code you pasted and add schema code of your blocks for your new theme below it. This will ensure that you can settings of the blocks. If you don't know the  "schema" code of your new theme, please refer to your new theme documentation or contact support. 
-              </p>
-                          <!-- Step 4 -->
-            <p class="leading-0 w-3/4 indent25 bold" id="step4">
-              Step 4: Edit the "product.json" file of your theme.
-            </p>
-              <p class="leading-0 w-3/4 indent50"> 
-              1. If "product.json" file is not showing your theme, please contact theme support.  Add the name of your file as a JSON object. Sample code below where name of custom section is "product-sizeguidelayout.liquid". If your not comfortable with adding this contact support.
-              <img src="./doc/jsonsample.png">
-              </p>
-              <p class="leading-0 w-3/4 indent50">
-              2. On 'product.json' file. Modify order of sections, add the custom section name as a JSON object and insert it next to breadcrumbs section or per your requirement. This will specify order of sections on your product page. Sample code below.  
-              <img src="./doc/ordersample.png">
-             </p>
-
-                             <!-- Step 5 -->
-            <p class="leading-0 w-3/4 indent25 bold" id="step5">
-              Step 5: Adding the 'Size Guide by SWAY' block into the theme using the customizer
+              Step 3: Adding the 'Size Guide by SWAY' block into the theme using the customizer
             </p>
               <p class="leading-0 w-3/4 indent50"> 
               1. Go to online store. Under the theme you want to add 'Size Guide', click on 'Customize' option. 
               </p>
               <p class="leading-0 w-3/4 indent50">
-              2. On the right side part of the screen under your custom product section name, look for "Size Guide by SWAY" blocks and  'Add Block' option. Add block per your requirement. There would be 3 blocks available for "Size Guide by SWAY" namely 'Size Guide Chart', 'Spacer' and "Find My Size button". Add it depending on your preference.           
-              </p>
+              2. On the right side part of the screen, look for click on 'Add Section' option and under Apps click on 'Product Pages embedded through Size Guide by SWAY'.  
+             </p>
               <p class="leading-0 w-3/4 indent50">
-              3. Please use your theme's "Variant or Swatch Picker", "Product Title", "Product Price" and "Add to Cart" block to ensure there would be no functionality issue along with 'Find My Size button' block and 'Size Guide Chart' block for the "Size Guide".    
+              3. Hide default product page of theme and drag 'Product Page' block next to 'Header' block or 'Breadcrumbs' block and Click 'Save' on the top.
               </p>
-              <p class="leading-0 w-3/4 indent50">
-              4. Hide default product page of theme and drag 'Product Page' block next to 'Header' block or 'Breadcrumbs' block and Click 'Save' on the top.
-              </p>
-          
-           <!-- Step 6 -->
-           
-            <p class="leading-0 w-3/4 indent25 bold" id="step6">
-              Step 6: Add shirt into the list
+           <!-- Step 4 -->
+            <p class="leading-0 w-3/4 indent25 bold" id="step4">
+              Step 4: Add shirt into the list
             </p>
               <p class="leading-0 w-3/4 indent50"> 
-              1. Under "Your Custom Product Content" section click on 'Size Guide Chart' block and it will open customization settings.
+              1. Inside App section, click on 'Product Pages' and it will open customization settings.
               </p>
               <p class="leading-0 w-3/4 indent50">
-              2. Under "Add Products here for Size Guide" textarea, edit and add product name you want the size guide to be added. Spacing and capitalization should be followed when adding product name and each product name needs to be enclosed with apostrophe and are separated with comma. 
+              2. Under "Add Products here for Size Guide", edit and add product name you want the size guide to be added. Spacing and capitalization should be followed when adding product name and each product name needs to be enclosed with apostrophe and are separated with comma. 
              </p>
               <p class="leading-0 w-3/4 indent50">
               3. Hit 'Save'.
               </p>
-              <!-- Step 7 -->
-            <p class="leading-0 w-3/4 indent25 bold" id="step7">
-              Step 7: Change selectors for new theme.
-            </p>
-              <p class="leading-0 w-3/4 indent50"> 
-              1. Edit your code. Open 'mobile-respo.js' and 'find-my-size.js', search for 'new theme'(word 'new theme' is a comment) and change selectors. This is to ensure that add to cart, variant changes and most recent tile functionality would not break. Selectors are only for frontend using dispatch event to trigger theme's functionality for adding to cart and variant changes. Sample below
-              <img src="./doc/newthemesample.png">
-              </p>
-            
-             <!-- Step 8 -->
-            <p class="leading-0 w-3/4 indent25 bold" id="step8">
-              Step 8: Further changes on code depending on theme.
+
+             <!-- Step 5 -->
+            <p class="leading-0 w-3/4 indent25 bold" id="step5">
+              Step 5: Further changes on code depending on theme.
             </p>
               <p class="leading-0 w-3/4 indent50"> 
               1. If font might be different. Please check if theme style is overriding what is set on affected texts.
